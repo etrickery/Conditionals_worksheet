@@ -29,52 +29,54 @@ input a different value. The conditional statement will display the results acco
  */
 
 //Request user to input mpg (mpg)
-mpg = prompt("Please enter your vehicle's fuel economy (Miles/Gallon):", 0);
+mpg = prompt("Please enter your vehicle's fuel economy (Miles/Gallon):", 0);        //var mpg
 
 //Created conditional statement to determine if value of mpg is a valid value, and if not, then set to default
 if (mpg!=="0") {
-    console.log("The fuel consumption rate will be set to " + mpg + "mpg.");
+    console.log("The fuel consumption rate will be set to " + mpg + "mpg.");        //if user input mpg, then display it
 
 } else {
-    console.log("The fuel consumption rate will be set to default (30mpg).");
+    console.log("The fuel consumption rate will be set to default (30mpg).");       //else set to default and display it
     mpg = 30;
 }
 
 
 //Request user to input remaining fuel in percentage (left)
-left = prompt("Please enter the remaining fuel (Percentage):", 0);
+left = prompt("Please enter the remaining fuel (Percentage):", 0);                  //var left
 
 //Created conditional statement to determine if value of left is a valid value, and if not, then set to default
 if (left!=="0") {
-    console.log("The fuel tank has " + left + "% remaining.");
+    console.log("The fuel tank has " + left + "% remaining.");                      //if user input left, display it
 
 } else {
-    console.log("The fuel remaining percentage has been set to default (100%).");
+    console.log("The fuel remaining percentage has been set to default (100%).");   //else set to default, display it
     left = 100;
 }
 
 
 //Request user to input fuel capacity in gallons (capacity)
-capacity = prompt("Please enter your vehicle fuel capacity (in gallons):", 0);
+capacity = prompt("Please enter your vehicle fuel capacity (in gallons):", 0);      //var capacity
 
 //Created conditional statement to determine if value of capacity is a valid value, and if not, then set to default
 if (capacity!=="0") {
-    console.log("The fuel tank will hold " + capacity + " gallons of fuel.");
+    console.log("The fuel tank will hold " + capacity + " gallons of fuel.");       //if user input capacity, display it
 
 } else {
-    console.log("The fuel tank capacity has been set to the default value (10gal).");
+    console.log("The fuel tank capacity has been set to the default value (10gal).");  //else set to default and display it
     capacity = 10;
 }
 
 //Display inputs in a concatenated statement
-console.log("A vehicle gets " + mpg + " miles per gallon. The vehicle holds " + capcity + " and is " + left + "% full.");
+console.log("A vehicle gets " + mpg + " miles per gallon. The vehicle holds " + capacity + " gallons and is " + left + "% full.");
 
 
 //calculations
-if ((((left / 100) * capacity) * mpg) < distance) {
+if ((((left / 100) * capacity) * mpg) >= distance) {
+    //calculate distance to empty, if greater than or equal to 200, then yes you can make it
     console.log("Yes, you can make it without stopping for fuel!");
 
 } else {
+    //else better stop now
     console.log("You only have " + (capacity * left) + " gallons of gas in your tank, better get gas now while you can!");
 
 }
@@ -84,9 +86,23 @@ if ((((left / 100) * capacity) * mpg) < distance) {
 
 
 
+
+
+
+
 //--------------------------------------
 //Group 2: Multiple Results
 //
+
+
+
+
+
+
+
+
+
+
 
 
 //--------------------------------------
