@@ -7,7 +7,7 @@
 //--------------------------------------
 //Group 1: Expressions with Conditionals
 //Last chance for gas
-
+/*
 //Define variables
 var mpg = 30;               //Fuel consumption rate for user's vehicle
 var left = 100;             //Fuel remaining (percentage)
@@ -123,15 +123,20 @@ if (inputUserName !== userName) {                               //If username do
 
 
 
-
+*/
 
 
 
 //--------------------------------------
 //Group 3: Multiple Conditions
-//
+//Tire Pressure
 
+var tirePressure = [0, 1, 2, 3];            //Current tire pressure, to be input by user
+var tirePresSpec = [0, 1, 2, 3];
 
-
+tirePresSpec[0] = 60;
+tirePresSpec[1] = 60;
+tirePresSpec[2] = 80;
+tirePresSpec[3] = 80;
 
 
