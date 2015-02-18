@@ -7,7 +7,7 @@
 //--------------------------------------
 //Group 1: Expressions with Conditionals
 //Last chance for gas
-/*
+
 //Define variables
 var mpg = 30;               //Fuel consumption rate for user's vehicle
 var left = 100;             //Fuel remaining (percentage)
@@ -81,7 +81,7 @@ if ((((left / 100) * capacity) * mpg) >= distance) {
 
 }
 
-*/
+
 
 
 
@@ -93,7 +93,7 @@ if ((((left / 100) * capacity) * mpg) >= distance) {
 
 //--------------------------------------
 //Group 2: Multiple Results
-//
+//Check the login
 
 
 var userName;       //Correct username
@@ -101,18 +101,18 @@ var password;       //Correct password
 var inputUserName;  //Username entered by user
 var inputPassword;  //Password entered by user
 
-userName = "Mr.Jones";
-password = "MyPass01";
+userName = "Mr.Jones";                                          //Default login
+password = "MyPass01";                                          //Default password
 
-inputUserName = prompt("Please enter your username:");
-inputPassword = prompt("Please enter your password:");
+inputUserName = prompt("Please enter your username:");          //Request login from user
+inputPassword = prompt("Please enter your password:");          //Request password from user
 
-if (inputUserName !== userName) {
+if (inputUserName !== userName) {                               //If username doesn't match, display error
     console.log("User not found. Try again.");
-} else {
-    if (inputPassword !== password) {
+} else {                                                        //Else, if username does match, continue
+    if (inputPassword !== password) {                           //If password doesn't match, display error
         console.log("Password does not match our records.");
-    } else {
+    } else {                                                    //Else, if both match, display welcome message
         console.log("Welcome, " + inputUserName + "!");
     }
 }
