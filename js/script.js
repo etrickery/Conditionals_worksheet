@@ -130,13 +130,30 @@ if (inputUserName !== userName) {                               //If username do
 //--------------------------------------
 //Group 3: Multiple Conditions
 //Tire Pressure
+//I work for a Dodge service department, and the Ram 2500 uses 60psi in the front, 80psi in the rear
+//I used those values to perform these calculations, which is the kind of calculations used by the actual TPMS system on the vehicle
+
+
 
 var tirePressure = [0, 1, 2, 3];            //Current tire pressure, to be input by user
-var tirePresSpec = [0, 1, 2, 3];
+var tirePresSpec = [0, 1, 2, 3];            //Specified tire pressure, per manufacturer
 
-tirePresSpec[0] = 60;
-tirePresSpec[1] = 60;
-tirePresSpec[2] = 80;
-tirePresSpec[3] = 80;
+tirePresSpec[0] = 60;                       //Left front tire (left from the driver's seat)
+tirePresSpec[1] = 60;                       //Right front tire
+tirePresSpec[2] = 80;                       //Left rear tire
+tirePresSpec[3] = 80;                       //Right rear tire
+
+tirePressure[0] = prompt("Please enter the left front tire pressure, in PSI: ", 60);    //Prompt for LF pressure
+tirePressure[1] = prompt("Please enter the right front tire pressure, in PSI: ", 60);   //Prompt for RF pressure
+tirePressure[2] = prompt("Please enter the left rear tire pressure, in PSI: ", 80);     //Prompt for LR pressure
+tirePressure[3] = prompt("Please enter the right rear tire pressure, in PSI: ", 80);    //Prompt for RR pressure
+
+
+
+
+
+
+
+
 
 
