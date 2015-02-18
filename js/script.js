@@ -7,7 +7,7 @@
 //--------------------------------------
 //Group 1: Expressions with Conditionals
 //Last chance for gas
-/*
+
 //Define variables
 var mpg = 30;               //Fuel consumption rate for user's vehicle
 var left = 100;             //Fuel remaining (percentage)
@@ -123,7 +123,7 @@ if (inputUserName !== userName) {                               //If username do
 
 
 
-*/
+
 
 
 
