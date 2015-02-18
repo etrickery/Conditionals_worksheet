@@ -7,7 +7,7 @@
 //--------------------------------------
 //Group 1: Expressions with Conditionals
 //Last chance for gas
-
+/*
 //Define variables
 var mpg = 30;               //Fuel consumption rate for user's vehicle
 var left = 100;             //Fuel remaining (percentage)
@@ -20,13 +20,13 @@ var stopForFuel = true;     //Boolean variable "Should user stop to purchase fue
 console.log("You have arrived at the last chance to purchase fuel for the next 200 miles. \nTo ensure your remaining fuel is sufficient to complete the journey, \nenter your vehicle's rate of fuel consumption (in miles per gallon).");
 
 
-/*
-When prompting users to input variable values, the alert box will carry a default value. If the user does not change the
-value of the variable, it will be set to a default value. This value is determined by the following conditional
-statements. Each conditional statement will check the value of the variable, then set to default if the user has not
-input a different value. The conditional statement will display the results accordingly.
 
- */
+//When prompting users to input variable values, the alert box will carry a default value. If the user does not change the
+//value of the variable, it will be set to a default value. This value is determined by the following conditional
+//statements. Each conditional statement will check the value of the variable, then set to default if the user has not
+//input a different value. The conditional statement will display the results accordingly.
+
+
 
 //Request user to input mpg (mpg)
 mpg = prompt("Please enter your vehicle's fuel economy (Miles/Gallon):", 0);        //var mpg
@@ -81,6 +81,7 @@ if ((((left / 100) * capacity) * mpg) >= distance) {
 
 }
 
+*/
 
 
 
@@ -94,6 +95,27 @@ if ((((left / 100) * capacity) * mpg) >= distance) {
 //Group 2: Multiple Results
 //
 
+
+var userName;       //Correct username
+var password;       //Correct password
+var inputUserName;  //Username entered by user
+var inputPassword;  //Password entered by user
+
+userName = "Mr.Jones";
+password = "MyPass01";
+
+inputUserName = prompt("Please enter your username:");
+inputPassword = prompt("Please enter your password:");
+
+if (inputUserName !== userName) {
+    console.log("User not found. Try again.");
+} else {
+    if (inputPassword !== password) {
+        console.log("Password does not match our records.");
+    } else {
+        console.log("Welcome, " + inputUserName + "!");
+    }
+}
 
 
 
