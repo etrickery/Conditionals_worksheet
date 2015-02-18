@@ -148,6 +148,23 @@ tirePressure[1] = prompt("Please enter the right front tire pressure, in PSI: ",
 tirePressure[2] = prompt("Please enter the left rear tire pressure, in PSI: ", 80);     //Prompt for LR pressure
 tirePressure[3] = prompt("Please enter the right rear tire pressure, in PSI: ", 80);    //Prompt for RR pressure
 
+if (tirePressure[0] < tirePresSpec[0]) {                        //If LF tire is below spec,
+    console.log("Get your tires checked out!");                 //Then display warning
+} else {                                                        //Else...
+    if (tirePressure[1] < tirePresSpec[1]) {                    //If RF tire is below spec,
+        console.log("Get your tires checked out!");             //Then display warning
+    } else {                                                    //Else...
+        if (tirePressure[2] < tirePresSpec[2]) {                //If LR tire is below spec,
+            console.log("Get your tires checked out!");         //Then display warning
+        } else {                                                //Else...
+            if (tirePressure[3] < tirePresSpec[3]) {            //If RR tire is below spec,
+                console.log("Get your tires checked out!");     //Then display warning
+            } else {                                            //Else
+                console.log("The tires pass spec!");            //Tires are in spec, display message stating so.
+            }
+        }
+    }
+}
 
 
 
